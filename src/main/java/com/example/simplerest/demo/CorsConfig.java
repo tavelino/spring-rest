@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
             .allowedOrigins("https://react-rest-git-simple-rest.apps.u0eqq9nm.eastus.aroapp.io")
-            .allowedMethods("GET", "POST", "PUT", "DELETE","PATCH")
+            .allowedMethods("GET", "POST", "PUT", "DELETE")
             .allowedHeaders("*");
     }
 }
